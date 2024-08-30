@@ -9,8 +9,19 @@
     
 </body>
 <script>
-    let a = 5
-    let b = 6
-    console.log(a + b);
+     let startStaion = prompt ("Enter Start Station")
+    let endtStaion = prompt ("Enter end Station")
+
+    if (startStaion === "university road" && endtStaion === "saddar bazar" ){
+        console.log("Go to Station B");
+        console.log("Fare: 20 PKR");
+    }else if (startStaion === "saddar bazar" && endtStaion === "hayatabad"){
+        console.log("Go to Station C");
+        console.log("Fare: 30 PKR");
+    }else if (startStaion === "university road" && endtStaion === "hayatabad"){
+        console.log("Go to Station C");
+        console.log("Fare: 40 PKR")
+    }
+    else console.log("invalid route, please check your stations")
 </script>
 </html>
